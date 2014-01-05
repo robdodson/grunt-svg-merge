@@ -37,12 +37,12 @@ module.exports = function (grunt) {
         // https://github.com/kriskowal/q#using-deferreds
         var deferred = Q.defer();
         // Pass each dir to svgMerge
-        var outputFile = dir.split(path.sep).pop();
-        outputFile = [outputFile, options.outputSuffix, '.svg'].join('');
+        var name = dir.split(path.sep).pop();
+        var outputFile = [name, options.outputSuffix, '.svg'].join('');
 
         var opts = {
           inputDir: dir,
-          outputDir: dest,
+          outputDir: path.join(dest, name),
           outputFile: outputFile,
           classPrefix: options.classPrefix
         };
