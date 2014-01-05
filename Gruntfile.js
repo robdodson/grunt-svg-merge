@@ -31,7 +31,7 @@ module.exports = function (grunt) {
     },
 
     svgmerge: {
-      multiple: {
+      files: {
         src: ['test/fixtures'],
         dest: 'tmp'
       }
