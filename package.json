@@ -1,0 +1,46 @@
+{
+  "name": "grunt-svg-merge",
+  "version": "0.0.1",
+  "description": "Merge a folder of svg files into a single file",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robdodson/grunt-svg-merge"
+  },
+  "bugs": "/issues",
+  "author": {
+    "name": "Rob Dodson",
+    "email": "lets.email.rob@gmail.com",
+    "url": "http://robdodson.me"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt": "~0.4.0rc2",
+    "load-grunt-tasks": "~0.2.0",
+    "jshint-stylish": "~0.1.3",
+    "grunt-simple-mocha": "~0.4.0",
+    "chai": "latest"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "svg-merge": "0.0.0",
+    "lodash": "~2.4.1",
+    "q": "~1.0.0"
+  }
+}
