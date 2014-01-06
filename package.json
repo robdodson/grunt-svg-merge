@@ -1,6 +1,6 @@
 {
   "name": "grunt-svg-merge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Merge a folder of svg files into a single file",
   "homepage": "",
   "repository": {

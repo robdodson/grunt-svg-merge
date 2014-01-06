@@ -19,5 +19,58 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-svg-merge');
 ```
 
+## Configuration
+
+To configure the task just pass in a `src` directory, with subfolders for each icon and a `dest` directory.
+
+``` js
+svgmerge: {
+  files: {
+    src: ['icons'],
+    dest: 'icons-out'
+  }
+}
+```
+
+### Options
+
+#### outputSuffix
+
+Default: `-out`
+Type: `String`
+
+Append a suffix to the end of every output file. Ex: `arrow.svg` becomes `arrow-out.svg`.
+
+```js
+svgmerge: {
+  files: {
+    src: ['icons'],
+    dest: 'icons-out',
+    options: {
+      outputSuffix: '-foo'
+    }
+  }
+}
+```
+
+#### classPrefix
+
+Default: `iconic`
+Type: `String`
+
+Prefix class names coming from svg files. Ex: `class="arrow-lg"` becomes `class="iconic-arrow-lg"`.
+
+```js
+svgmerge: {
+  files: {
+    src: ['icons'],
+    dest: 'icons-out',
+    options: {
+      classPrefix: 'awesome'
+    }
+  }
+}
+```
+
 ## License
 Copyright (c) 2014 Rob Dodson. Licensed under the MIT license.
