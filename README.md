@@ -36,7 +36,7 @@ svgmerge: {
 
 #### outputSuffix
 
-Default: `-out`
+Default: `-out`  
 Type: `String`
 
 Append a suffix to the end of every output file. Ex: `arrow.svg` becomes `arrow-out.svg`.
@@ -55,7 +55,7 @@ svgmerge: {
 
 #### classPrefix
 
-Default: `iconic`
+Default: `iconic`  
 Type: `String`
 
 Prefix class names coming from svg files. Ex: `class="arrow-lg"` becomes `class="iconic-arrow-lg"`.
