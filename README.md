@@ -53,24 +53,5 @@ svgmerge: {
 }
 ```
 
-#### classPrefix
-
-Default: `iconic`  
-Type: `String`
-
-Prefix class names coming from svg files. Ex: `class="arrow-lg"` becomes `class="iconic-arrow-lg"`.
-
-```js
-svgmerge: {
-  files: {
-    src: ['icons'],
-    dest: 'icons-out',
-    options: {
-      classPrefix: 'awesome'
-    }
-  }
-}
-```
-
 ## License
 Copyright (c) 2014 Rob Dodson. Licensed under the MIT license.

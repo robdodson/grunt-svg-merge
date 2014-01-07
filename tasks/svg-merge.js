@@ -19,8 +19,7 @@ module.exports = function (grunt) {
     var done = this.async();
     var dest = this.data.dest;
     var options = this.options({
-      outputSuffix: '-out',
-      classPrefix: 'iconic'
+      outputSuffix: '-out'
     });
 
     var promises = [];
@@ -43,8 +42,7 @@ module.exports = function (grunt) {
         var opts = {
           inputDir: dir,
           outputDir: path.join(dest, name),
-          outputFile: outputFile,
-          classPrefix: options.classPrefix
+          outputFile: outputFile
         };
 
         svgMerge(opts, deferred.resolve);
