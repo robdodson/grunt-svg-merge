@@ -36,7 +36,8 @@
     "load-grunt-tasks": "~0.2.0",
     "jshint-stylish": "~0.1.3",
     "grunt-simple-mocha": "~0.4.0",
-    "chai": "latest"
+    "chai": "latest",
+    "time-grunt": "~0.2.7"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"

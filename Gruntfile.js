@@ -2,7 +2,7 @@
  * grunt-svg-merge
  * 
  *
- * Copyright (c) 2014 Rob Dodson
+ * Copyright (c) 2014 Iconic
  * Licensed under the MIT license.
  */
 
@@ -11,6 +11,8 @@
 module.exports = function (grunt) {
   // load all npm grunt tasks
   require('load-grunt-tasks')(grunt);
+  // time grunt
+  require('time-grunt')(grunt);
 
   // Project configuration.
   grunt.initConfig({
